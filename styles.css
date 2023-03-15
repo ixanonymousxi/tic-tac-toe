@@ -6,3 +6,147 @@ body{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size:14pt;
 }
+
+button, input[type='submit']{
+    cursor:pointer;
+}
+
+#wrapper{
+    width:100%;
+    height:100vh;
+    background:rgb(198, 234, 251);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+#container{
+    background:rgb(14, 76, 104);
+    width:85vh;
+    height:85vh;
+    display:grid;
+    gap:10px;
+    padding:5px;
+}
+
+.gridLayout{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 1fr); 
+}
+
+#newGameContainer{
+    background: rgb(14, 76, 104);
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap:25px;
+    display:none;
+}
+
+#newGameContainer button{
+    background: rgb(198, 234, 251);
+    color: rgb(14, 76, 104);
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+}
+
+#newGameContainer button:hover {
+    background: white;
+}
+
+#newGameContainer p {
+    font-family:'Charcoal',sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color:white;
+    margin:0;
+}
+
+#playerFormContainer {
+    background: rgb(14, 76, 104);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+    width:60%;
+}
+
+.inputContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#playerName{
+    background: rgb(14, 76, 104);
+    border: 2px solid rgb(198, 234, 251);
+    border-radius: 8px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size:1rem;
+    padding:10px;
+}
+
+#playerName:focus {
+    border:none;
+    border-bottom: 2px solid rgb(198, 234, 251);
+    border-top: 2px solid rgb(198, 234, 251);
+    outline:none;
+}
+
+.inputContainer p{
+    margin:0;
+}
+
+.radioInputs{
+    display: flex;
+    gap: 25px;
+    font-weight:normal;
+}
+
+#playerFormContainer input[type='submit'] {
+    background: rgb(198, 234, 251);
+    color: rgb(14, 76, 104);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+}
+
+#playerFormContainer input[type='submit']:hover {
+    background: white;
+}
+
+.block{
+    background:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size:7rem;
+    color:rgb(14, 76, 104);
+    font-weight:bold;
+    display:none;
+}

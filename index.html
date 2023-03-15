@@ -7,9 +7,53 @@
     <title>Tic Tac Toe</title>
 
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     
+    <div id="wrapper">
+        <div id="container">
+            <div id="newGameContainer">
+                <p>Tic Tac Toe</p>
+                <button onclick="gameFlow.displayBoard()">New Game</button>
+            </div>
+
+            <div id="playerFormContainer">
+                <form>
+                    <div class="inputContainer">
+                        <label for="playerName">Player One Name:</label>
+                        <input type="text" id="playerName" name="palyerName">
+                    </div>
+                    <div class="inputContainer">
+                        <p>Player One Marker:</p>
+                        <div class="radioInputs">
+                            <div>
+                                <input type="radio" id="X-Symbol" name="symbol" value="X" checked>
+                                <label for="X-Symbol">X</label>
+
+                            </div>
+                            <div>
+                                <input type="radio" id="O-Symbol" name="symbol" value="O">
+                                <label for="O-Symbol">O</label>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="submit">
+                </form>
+            </div>
+
+            <div id= "TL" class="block">X</div>
+            <div id= "TC" class="block">X</div>
+            <div id= "TR" class="block">X</div>
+            <div id= "ML" class="block">O</div>
+            <div id= "MC" class="block">O</div>
+            <div id= "MR" class="block">O</div>
+            <div id= "BL" class="block">X</div>
+            <div id= "BC" class="block">X</div>
+            <div id= "BR" class="block">X</div>
+        </div>
+
+    </div>
+
 </body>
 </html>
