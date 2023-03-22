@@ -16,6 +16,7 @@ button, input[type='submit']{
     height:100vh;
     background:rgb(198, 234, 251);
     display:flex;
+    flex-flow: column;
     justify-content:center;
     align-items:center;
 }
@@ -43,7 +44,6 @@ button, input[type='submit']{
     justify-content: center;
     align-items:center;
     gap:25px;
-    display:none;
 }
 
 #newGameContainer button{
@@ -81,6 +81,7 @@ button, input[type='submit']{
     justify-content: center;
     align-items: center;
     gap: 25px;
+    display:none;
 }
 
 form{
@@ -149,4 +150,33 @@ form{
     color:rgb(14, 76, 104);
     font-weight:bold;
     display:none;
+    cursor:pointer;
+}
+
+#gameStatusContainer{
+    width:85vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+#gameStatusContainer p{
+    /*display:none;*/
+}
+
+#gameStatusContainer button{
+    color: rgb(198, 234, 251);
+    background: rgb(14, 76, 104);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 20px;
+    align-self:center;
+}
+
+#gameStatusContainer button:hover {
+    background: white;
+    border:2px solid rgb(14, 76, 104);
+    color:rgb(14, 76, 104);
 }
